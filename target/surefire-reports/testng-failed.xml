@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="homepage.ContactUs"/>
+      <class name="contactpage.CheckSelectSubProductEmpty"/>
+      <class name="homepage.NavigationBar"/>
+      <class name="contactpage.CheckIAmLookingForDropdown"/>
+      <class name="contactpage.CheckErrorWithoutEnteringDetails"/>
+      <class name="homepage.TestNews"/>
+      <class name="contactpage.PhoneNumberAuthentication"/>
+      <class name="contactpage.ProductLoanDropdown"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="contactpage.CheckErrorWithoutEnteringDetails">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- contactpage.CheckErrorWithoutEnteringDetails -->
+      <class name="contactpage.CheckSelectSubProductEmpty">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- contactpage.CheckSelectSubProductEmpty -->
+      <class name="contactpage.CheckIAmLookingForDropdown">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- contactpage.CheckIAmLookingForDropdown -->
+      <class name="contactpage.PhoneNumberAuthentication">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- contactpage.PhoneNumberAuthentication -->
+      <class name="homepage.NavigationBar">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- homepage.NavigationBar -->
+      <class name="homepage.TestNews">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- homepage.TestNews -->
+      <class name="contactpage.ProductLoanDropdown">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- contactpage.ProductLoanDropdown -->
+      <class name="homepage.ContactUs">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="testContactUs"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- homepage.ContactUs -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

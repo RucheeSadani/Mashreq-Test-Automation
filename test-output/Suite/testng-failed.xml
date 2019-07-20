@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="homepage.ContactUs"/>
+      <class name="contactpage.CheckSelectSubProductEmpty"/>
+      <class name="homepage.NavigationBar"/>
+      <class name="contactpage.CheckIAmLookingForDropdown"/>
+      <class name="contactpage.CheckErrorWithoutEnteringDetails"/>
+      <class name="homepage.TestNews"/>
+      <class name="contactpage.PhoneNumberAuthentication"/>
+      <class name="contactpage.ProductLoanDropdown"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="contactpage.PhoneNumberAuthentication">
+        <methods>
+          <include name="checkPhoneNumber7Digits"/>
+          <include name="checkPhoneNumberLessThan7Digits"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- contactpage.PhoneNumberAuthentication -->
+      <class name="contactpage.CheckIAmLookingForDropdown">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="checkIAmLookingForDropdown"/>
+        </methods>
+      </class> <!-- contactpage.CheckIAmLookingForDropdown -->
+      <class name="homepage.ContactUs">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="testContactUs"/>
+        </methods>
+      </class> <!-- homepage.ContactUs -->
+      <class name="contactpage.ProductLoanDropdown">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="checkProductLoanDropdown"/>
+        </methods>
+      </class> <!-- contactpage.ProductLoanDropdown -->
+      <class name="homepage.NavigationBar">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="navigationBarCheck"/>
+        </methods>
+      </class> <!-- homepage.NavigationBar -->
+      <class name="contactpage.CheckErrorWithoutEnteringDetails">
+        <methods>
+          <include name="testErrorWithoutFillingDetails"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- contactpage.CheckErrorWithoutEnteringDetails -->
+      <class name="contactpage.CheckSelectSubProductEmpty">
+        <methods>
+          <include name="checkSelectSubProductEmpty"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- contactpage.CheckSelectSubProductEmpty -->
+      <class name="homepage.TestNews">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="testNewsDisplay"/>
+        </methods>
+      </class> <!-- homepage.TestNews -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
